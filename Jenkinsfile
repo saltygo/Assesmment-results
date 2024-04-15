@@ -60,6 +60,7 @@ pipeline {
 def build(){
     echo 'Building of node application is starting ..'
     sh "ls"
+    sh "npm -v"
     sh "npm install"
 
 }
