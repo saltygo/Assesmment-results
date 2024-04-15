@@ -26,7 +26,8 @@ pipeline {
             steps {
                 echo 'Testing on STG has started ..'
             }
-        }stage('Deploy to PRD') {
+        }
+        stage('Deploy to PRD') {
             steps {
                 echo 'Deplyment to PRD has started ..'
             }
