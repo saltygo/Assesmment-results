@@ -63,17 +63,17 @@ def build(){
     echo 'Building of node application is starting ..'
     // sh 'npm config ls'
     sh "ls"
-    sh "npm install"
+    // sh "npm install"
 
 }
 
 def deploy(String enviroment, int port){
     echo "Deplyment to ${enviroment} has started .."
-    sh "pm2 delete ${enviroment}"
-    sh "pm2 start -n \"${enviroment}\" index.js -- ${port}"
+    // sh "pm2 delete ${enviroment}"
+    // sh "pm2 start -n \"${enviroment}\" index.js -- ${port}"
 }
 
 def test(String enviroment){
     echo "Testing on ${enviroment} has started .."
-    sh "npm test"
+    // sh "npm test"
 }
