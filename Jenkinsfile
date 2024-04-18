@@ -63,7 +63,7 @@ def build(){
     echo 'Building of node application is starting ..'
     // sh 'npm config ls'
     sh "ls"
-    // sh "npm install"
+    sh "npm install"
 
 }
 
