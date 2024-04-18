@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    tools {nodejs "nodejs"}
+    // tools {nodejs "nodejs"}
 
     stages {
         stage('Build') {
@@ -62,8 +62,8 @@ pipeline {
 def build(){
     echo 'Building of node application is starting ..'
     sh "ls"
-    sh 'npm config ls'
-    sh "npm install"
+    // sh 'npm config ls'
+    sh "node install"
 
 }
 
